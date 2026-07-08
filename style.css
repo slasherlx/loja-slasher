@@ -14,7 +14,9 @@
 }
 
 :root {
-    --cor-primaria :#141A22;
+    --cor-1:#2e0f4f;
+    --cor-2: #553574;
+    --cor-3: #240a3b;
     --fonte-principal: 'Press';
     --fonte-secundaria: 'Bebas';
 }
@@ -26,7 +28,7 @@
 
 header {
     padding: 20px;
-    background-color: #141A22;
+    background-color: var(--cor-1);
     height: 200px;
     font-size: 25px;
 }
@@ -50,7 +52,7 @@ header > p {
     font-size: 17px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 7px #0D1117, -2px 2px 7px #0D1117;
     color: white;
     animation: slashstore 0.8s ease-in-out forwards;
 }
@@ -62,12 +64,12 @@ header > p {
 }
 
 body {
-    background-color: #0D1117;
+    background-color: var(--cor-3);
 }
 
 main {
     text-align: center;
-    background-image: linear-gradient(to bottom, #141A22, #0D1117);
+    background-image: linear-gradient(to bottom, var(--cor-1), var(--cor-3));
     color: white;
     
 }
@@ -106,6 +108,16 @@ aside > h2 {
     font-family: 'Bebas';
     color: white;
     text-shadow: 2px 2px 5px black;
+    transition: transform 0.6s, background-image 1s;
+
+}
+
+aside > h2:hover {
+    transform: translateX(10px);
+    background-image: linear-gradient(to right, #ffffff44, transparent, transparent);
+    padding-left: 4px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 aside > p {
