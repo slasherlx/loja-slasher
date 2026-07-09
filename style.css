@@ -13,98 +13,117 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'Akira';
+    src: url(fonts/akira_expanded/akira.otf) format(opentype);
+}
+
 :root {
-    --cor-1:#2e0f4f;
-    --cor-2: #553574;
-    --cor-3: #240a3b;
+    --cor1:#2e2e2e44;
+    --cor2: #252525;
+    --cor3: #1b1b1b;
     --fonte-principal: 'Press';
     --fonte-secundaria: 'Bebas';
 }
 
-* {
-    padding: 0px;
+html {
+    height: 130%;
+}
+
+body {
+    background-color: var(--cor3);
     margin: 0px;
 }
 
 header {
-    padding: 20px;
-    background-color: var(--cor-1);
-    height: 200px;
+    padding: 10px 0px;
+    background-color: var(--cor1);
+    height: 230px;
+    min-width: 500px;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 10px;
     font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 header > h1 {
-    color: white;
-    font-family: 'Press';
-    margin-top: 60px;
-    font-size: clamp(1.5rem, 5vw, 3rem);
     text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Akira';
+    font-size: clamp(4rem, 8vw, 6.5rem);
     text-shadow: 2px 2px 7px #0D1117, -2px 2px 7px #0D1117;
-    animation: slashstore 0.8s ease-in-out forwards;
+    animation: sosastore 2.5s ease-in-out;
     
 }
 
-
-
-
 header > p {
     text-align: center;
-    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 7px #0D1117, -2px 2px 7px #0D1117;
     color: white;
-    animation: slashstore 0.8s ease-in-out forwards;
+    animation: sosastore 2s ease-in-out;
 }
 
-@keyframes slashstore {
+@keyframes sosastore {
     from {
-        transform: translate(-4000px);
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
     }
 }
 
-body {
-    background-color: var(--cor-3);
-}
-
-main {
+nav {
+    display: block;
+    margin: auto;
     text-align: center;
-    background-image: linear-gradient(to bottom, var(--cor-1), var(--cor-3));
+    background-color: var(--cor2);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 350px;
     color: white;
-    
 }
 
-main > button {
+nav > button {
     background-color: rgba(68, 68, 121, 0);
     font-size: 18px;
     border: none;
     padding: 5px 10px;
     border-radius: 6px;
     transition: background-color 0.7s, transform 0.7s;
-    cursor: po;
-    animation: slashstore 0.8s ease-in-out forwards;
+    cursor: pointer;
 }
 
-main > button:hover {
-    background-color: rgba(255, 255, 255, 0.527);
+nav > button:hover {
+    background-color: rgba(255, 255, 255, 0.089);
     transform: scale(1.05);
 }
 
-main > button > a{
+nav > button > a{
     color: white;
     text-decoration: none;
 }
 
-aside {
-    background-color: rgba(68, 74, 80, 0.404);
+main {
+    background-color: rgba(34, 34, 34, 0.185);
     border: 1px solid #ffffff;
-    padding: 15px;
-    margin: 10px 50px;
+    padding: 20px;
+    margin: auto;
     border-radius: 5px;
+    min-width: 320px;
+    max-width: 800px;
 }
 
-aside > h2 {
-    font-size: 25px;
+main > h2 {
+    font-size: 30px;
     font-family: 'Bebas';
     color: white;
     text-shadow: 2px 2px 5px black;
@@ -112,7 +131,7 @@ aside > h2 {
 
 }
 
-aside > h2:hover {
+main > h2:hover {
     transform: translateX(10px);
     background-image: linear-gradient(to right, #ffffff44, transparent, transparent);
     padding-left: 4px;
@@ -120,9 +139,10 @@ aside > h2:hover {
     border-bottom-left-radius: 5px;
 }
 
-aside > p {
+main > p {
     text-indent: 30px;
     font-size: 20px;
+    line-height: 1.3em;
     text-align: justify;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -132,17 +152,91 @@ footer {
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #242424;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 500px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px;
 }
 
 span {
     text-decoration: underline;
     transition: 0.4s;
+    color: rgb(0, 255, 234);
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 span:hover {
-    background-color: #ffffff88;
+    background-color: rgba(0, 255, 234, 0.178);
     padding: 6px;
     border: none;
     border-radius: 5px;
 }
 
+aside {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    max-width: 800px;
+    min-width: 320px;
+    height: 300px;
+}
+
+aside h3 {
+    color: white;
+    font-family: 'Bebas';
+    font-size: 25px;
+    padding: 3px 10px;
+    background-color: #29466b;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+aside button {
+    all: unset;
+    display: block;
+    background-color: #2f4058;
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+    font-family: 'Akira';
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 75px;
+    cursor: pointer;
+}
+
+aside img {
+    height: 1em;
+    width: auto;
+    padding: 0px 10px;
+    transform: translateY(6px);
+}
+
+.dc {
+    color: white;
+    text-decoration: none;
+}
+
+.dc:hover {
+    color: #6b7de0;
+    transition: all 0.5s;
+}
+
+strong {
+    color: #999999;
+}
