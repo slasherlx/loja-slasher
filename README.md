@@ -1,4 +1,4 @@
 # sosa-group
 by: slasherlx and dwwzh
 
-<a href="index.html">Site da loja</a>
+<a href="https://slasherlx.github.io/loja-slasher/" target="_blank">Site da loja</a>
