@@ -217,7 +217,7 @@ aside h3 {
 aside button {
     all: unset;
     display: block;
-    background-color: #3b4e69;
+    background-color: #273A52;
     font-size: clamp(2.5rem, 8vw, 3.5rem);
     font-family: 'Akira';
     padding: 10px;
