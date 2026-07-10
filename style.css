@@ -88,7 +88,7 @@ nav {
     padding: 5px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 350px;
+    width: 500px;
     color: white;
 }
 
@@ -114,7 +114,7 @@ nav > button > a{
 
 main {
     background-color: rgba(34, 34, 34, 0.185);
-    border: 1px solid #ffffff;
+    border: 1px solid #ffffff41;
     padding: 20px;
     margin: auto;
     border-radius: 5px;
@@ -141,9 +141,10 @@ main > h2:hover {
 
 main > p {
     text-indent: 30px;
+    word-spacing: 2px;
     font-size: 20px;
-    line-height: 1.3em;
     text-align: justify;
+    line-height: 1.5em;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -174,13 +175,13 @@ footer p {
 span {
     text-decoration: underline;
     transition: 0.4s;
-    color: rgb(0, 255, 234);
+    color: #488ec7;
     font-weight: bolder;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 span:hover {
-    background-color: rgba(0, 255, 234, 0.178);
+    background-color: #1a4c8d2f;
     padding: 6px;
     border: none;
     border-radius: 5px;
@@ -189,7 +190,9 @@ span:hover {
 aside {
     display: block;
     margin: 0 auto;
+    margin-top: 15px;
     color: white;
+    border: 1px solid #ffffff41;
     background-color: rgb(32, 32, 32);
     border-radius: 5px;
     max-width: 800px;
@@ -200,6 +203,10 @@ aside {
 aside h3 {
     color: white;
     font-family: 'Bebas';
+    border: 1px solid #334d96;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.349);
+    margin-top: -1px;
+    margin-left: -1px;
     font-size: 25px;
     padding: 3px 10px;
     background-color: #29466b;
@@ -210,7 +217,7 @@ aside h3 {
 aside button {
     all: unset;
     display: block;
-    background-color: #2f4058;
+    background-color: #3b4e69;
     font-size: clamp(2.5rem, 8vw, 3.5rem);
     font-family: 'Akira';
     padding: 10px;
@@ -233,7 +240,7 @@ aside img {
 }
 
 .dc:hover {
-    color: #6b7de0;
+    color: #90a1ff;
     transition: all 0.5s;
 }
 
